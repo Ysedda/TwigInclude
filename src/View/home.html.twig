@@ -1,13 +1,5 @@
 {# home.html.twig #}
 {% extends 'layout.html.twig' %}
-{% block navbar %}
-    {% include 'component/_navbar.html.twig' %}
-{% endblock %}
 {% block title %}
     {{ parent() }} - Accueil
-{% endblock %}
-{% block content %}
-    {% for activity in activities %}
-        {% include 'component/_card.html.twig' %}
-    {% endfor %}
 {% endblock %}
